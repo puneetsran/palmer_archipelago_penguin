@@ -14259,7 +14259,7 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Palmer-Archipelago-(Antarctica)-Penguins-Dataset">Palmer Archipelago (Antarctica) Penguins Dataset<a class="anchor-link" href="#Palmer-Archipelago-(Antarctica)-Penguins-Dataset">&#182;</a></h1><h3 id="Source">Source<a class="anchor-link" href="#Source">&#182;</a></h3><p>I found this dataset on Kaggle here: <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data">https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data</a>
+<h1 id="Palmer-Archipelago-(Antarctica)-Penguins-Dataset">Palmer Archipelago (Antarctica) Penguins Dataset<a class="anchor-link" href="#Palmer-Archipelago-(Antarctica)-Penguins-Dataset">&#182;</a></h1><h5 id="Project-by-Puneet-Sran">Project by Puneet Sran<a class="anchor-link" href="#Project-by-Puneet-Sran">&#182;</a></h5><h3 id="Source">Source<a class="anchor-link" href="#Source">&#182;</a></h3><p>I found this dataset on Kaggle here: <a href="https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data">https://www.kaggle.com/datasets/parulpandey/palmer-archipelago-antarctica-penguin-data</a>
 It is originally collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network. It contains Penguin species data from diffent islands in Antarctive and also includes Penguin physical characteristics.</p>
 <h3 id="Key-attributes/-Dimensions">Key attributes/ Dimensions<a class="anchor-link" href="#Key-attributes/-Dimensions">&#182;</a></h3><p>I will be using the penguin size dataset. There are several attributes for this dataset. Some key attributes are:</p>
 <ul>
@@ -14805,10 +14805,19 @@ memory usage: 20.8+ KB
 <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">species_selection</span><span class="p">,</span> <span class="n">island_selection</span><span class="p">)</span>
 
 <span class="c1"># Format the chart</span>
-<span class="n">chart</span> <span class="o">=</span> <span class="n">scatter</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">400</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span><span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_legend</span><span class="p">(</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span><span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;top-left&#39;</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span><span class="n">fontSize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">fontWeight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">chart</span> <span class="o">=</span> <span class="n">scatter</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span>
+    <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_legend</span><span class="p">(</span>
+    <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;top-left&#39;</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span>
+    <span class="n">fontSize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+    <span class="n">fontWeight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
 
 <span class="n">chart</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span><span class="n">stroke</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
@@ -14832,13 +14841,13 @@ memory usage: 20.8+ KB
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-a136632304124cd1a6d73e96b105cb7c"></div>
+<div id="altair-viz-64b749cb2b4444fda4f910930e0d2ff7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a136632304124cd1a6d73e96b105cb7c") {
-      outputDiv = document.getElementById("altair-viz-a136632304124cd1a6d73e96b105cb7c");
+    if (outputDiv.id !== "altair-viz-64b749cb2b4444fda4f910930e0d2ff7") {
+      outputDiv = document.getElementById("altair-viz-64b749cb2b4444fda4f910930e0d2ff7");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -14936,10 +14945,21 @@ memory usage: 20.8+ KB
 <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">species_selection</span><span class="p">,</span> <span class="n">island_selection</span><span class="p">)</span>
 
 <span class="c1"># Format the chart</span>
-<span class="n">chart</span> <span class="o">=</span> <span class="n">scatter</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">400</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span><span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_legend</span><span class="p">(</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span><span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;bottom-left&#39;</span><span class="p">,</span><span class="n">fillColor</span><span class="o">=</span><span class="s1">&#39;#FFFFFF&#39;</span><span class="p">,</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span><span class="n">fontSize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span><span class="n">fontWeight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+<span class="n">chart</span> <span class="o">=</span> <span class="n">scatter</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_axis</span><span class="p">(</span>
+    <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_legend</span><span class="p">(</span>
+    <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span>
+    <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+    <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;bottom-left&#39;</span><span class="p">,</span>
+    <span class="n">fillColor</span><span class="o">=</span><span class="s1">&#39;#FFFFFF&#39;</span><span class="p">,</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_title</span><span class="p">(</span>
+    <span class="n">fontSize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span>
+    <span class="n">fontWeight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+
 
 <span class="n">chart</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span><span class="n">stroke</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </pre></div>
@@ -14963,13 +14983,13 @@ memory usage: 20.8+ KB
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-3b0670b57068433a9ea212e015873b17"></div>
+<div id="altair-viz-8904acb1ec484380af860075657fada0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3b0670b57068433a9ea212e015873b17") {
-      outputDiv = document.getElementById("altair-viz-3b0670b57068433a9ea212e015873b17");
+    if (outputDiv.id !== "altair-viz-8904acb1ec484380af860075657fada0") {
+      outputDiv = document.getElementById("altair-viz-8904acb1ec484380af860075657fada0");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15059,6 +15079,7 @@ memory usage: 20.8+ KB
 <span class="c1"># Create a container for two different views</span>
 <span class="n">base</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">penguins_df</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
 
+<span class="c1"># Specify our overview chart</span>
 <span class="n">overview</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">penguins_df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Number of Penguins by Island&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
     <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;island:N&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Island&#39;</span><span class="p">),</span>
     <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Penguins&#39;</span><span class="p">),</span>
@@ -15066,6 +15087,7 @@ memory usage: 20.8+ KB
     <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;island:N&quot;</span><span class="p">,</span> <span class="s2">&quot;count()&quot;</span><span class="p">],</span>
 <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">selection</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
 
+<span class="c1"># Create a detail chart</span>
 <span class="n">detail</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
     <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;sex:N&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
     <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count()&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Number of Penguins&#39;</span><span class="p">),</span>
@@ -15095,13 +15117,13 @@ memory usage: 20.8+ KB
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-61cb85977f2a47a5ba1761124b160be1"></div>
+<div id="altair-viz-72541bbc8fbd4220a30ffff4fb1af38d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-61cb85977f2a47a5ba1761124b160be1") {
-      outputDiv = document.getElementById("altair-viz-61cb85977f2a47a5ba1761124b160be1");
+    if (outputDiv.id !== "altair-viz-72541bbc8fbd4220a30ffff4fb1af38d") {
+      outputDiv = document.getElementById("altair-viz-72541bbc8fbd4220a30ffff4fb1af38d");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -15161,7 +15183,7 @@ memory usage: 20.8+ KB
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The bar char above illustrates the population of Penguins across different islands. By clicking each island, you can see the female and male population on each island on the right side plot. Island Biscoe has the greatest population, Dream has the second most population, and Torgersen has the least.</p>
-<p>All islands have a fairly equal number of males and females, with very small differences.</p>
+<p>All islands have a fairly erual number of males and females, with very small differences.</p>
 
 </div>
 </div>
@@ -15213,8 +15235,7 @@ memory usage: 20.8+ KB
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># transform_density to generate violin plot</span>
-<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">penguins_df</span><span class="p">)</span><span class="o">.</span><span class="n">transform_density</span><span class="p">(</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">penguins_df</span><span class="p">)</span><span class="o">.</span><span class="n">transform_density</span><span class="p">(</span>
     <span class="s1">&#39;body_mass_g&#39;</span><span class="p">,</span>
     <span class="n">as_</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;body_mass_g&#39;</span><span class="p">,</span> <span class="s1">&#39;density&#39;</span><span class="p">],</span>
     <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">7500</span><span class="p">],</span>
@@ -15222,15 +15243,30 @@ memory usage: 20.8+ KB
 <span class="p">)</span><span class="o">.</span><span class="n">mark_area</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
     <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;body_mass_g:Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Body Mass (g)&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">10</span><span class="p">)),</span>
     <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;species:N&#39;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">titleFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">10</span><span class="p">)),</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;density:Q&#39;</span><span class="p">,</span><span class="n">stack</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">impute</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span>
+        <span class="s1">&#39;density:Q&#39;</span><span class="p">,</span>
+        <span class="n">stack</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span>
+        <span class="n">impute</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+        <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="n">titleFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">grid</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ticks</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
     <span class="p">),</span>
-    <span class="n">column</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="s1">&#39;species:N&#39;</span><span class="p">,</span><span class="n">sort</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Adelie&#39;</span><span class="p">,</span> <span class="s1">&#39;Chinstrap&#39;</span><span class="p">,</span> <span class="s1">&#39;Gentoo&#39;</span><span class="p">],</span>
-                      <span class="n">header</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Header</span><span class="p">(</span><span class="n">titleOrient</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span><span class="n">labelOrient</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Species&quot;</span><span class="p">,</span><span class="n">labelFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span><span class="n">labelPadding</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">column</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span>
+        <span class="s1">&#39;species:N&#39;</span><span class="p">,</span>
+         <span class="n">sort</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Adelie&#39;</span><span class="p">,</span> <span class="s1">&#39;Chinstrap&#39;</span><span class="p">,</span> <span class="s1">&#39;Gentoo&#39;</span><span class="p">],</span>
+        <span class="n">header</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Header</span><span class="p">(</span>
+            <span class="n">titleOrient</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+            <span class="n">labelOrient</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span>
+            <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Species&quot;</span><span class="p">,</span>
+            <span class="n">labelFontSize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
+            <span class="n">labelPadding</span><span class="o">=</span><span class="mi">10</span>
+        <span class="p">),</span>
     <span class="p">)</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">350</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_facet</span><span class="p">(</span><span class="n">spacing</span><span class="o">=</span><span class="mi">0</span>
-<span class="p">)</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span><span class="n">stroke</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">350</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_facet</span><span class="p">(</span>
+    <span class="n">spacing</span><span class="o">=</span><span class="mi">0</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span>
+    <span class="n">stroke</span><span class="o">=</span><span class="kc">None</span>
 <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
     <span class="n">title</span><span class="o">=</span><span class="p">{</span>
         <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Distribution of Penguin Body Mass for different Species&quot;</span><span class="p">,</span>
@@ -15249,7 +15285,9 @@ memory usage: 20.8+ KB
         <span class="n">alt</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="s1">&#39;species:N&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Species&#39;</span><span class="p">),</span>
         <span class="n">alt</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="s1">&#39;mean(body_mass_g):Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Mean Body Mass&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">),</span>
         <span class="n">alt</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="s1">&#39;min(body_mass_g):Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Minimum Body Mass&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">),</span>
-        <span class="n">alt</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="s1">&#39;max(body_mass_g):Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Maximum Body Mass&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">),])</span>
+        <span class="n">alt</span><span class="o">.</span><span class="n">Tooltip</span><span class="p">(</span><span class="s1">&#39;max(body_mass_g):Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Maximum Body Mass&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;.2f&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15271,13 +15309,13 @@ memory usage: 20.8+ KB
 
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
 
-<div id="altair-viz-d2795cf0b92e4558b2b8c8fa30b56992"></div>
+<div id="altair-viz-6e16f0f28ecf48fe90d28a1ccfe2e464"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d2795cf0b92e4558b2b8c8fa30b56992") {
-      outputDiv = document.getElementById("altair-viz-d2795cf0b92e4558b2b8c8fa30b56992");
+    if (outputDiv.id !== "altair-viz-6e16f0f28ecf48fe90d28a1ccfe2e464") {
+      outputDiv = document.getElementById("altair-viz-6e16f0f28ecf48fe90d28a1ccfe2e464");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
